@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>André Pamplona | Contato</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+<body>
+
+  <header>
+        <a href="index.html" class="logo">André Pamplona</a>
+
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="resumo.html">Resumo</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+    </header>
+  
+    <section class="intro-page"> 
+      <h1>Contato</h1>
+      <span>Fale comigo e tire sua dúvida</span>
+  </section>
+
+  <section class="icones-contato">
+    <div class="icone-item">
+      <i class="fas fa-phone-alt"></i>
+      <div class="info-contato"> 
+        <span class="info">(83) 99608-3346</span>
+        <div class="linha-contato"></div>
+      </div>
+    </div>
+
+    <div class="icone-item">
+      <i class="fas fa-envelope"></i>
+      <div class="info-contato"> 
+        <span class="info">andre.pamplona.filho@gmail.com</span>
+        <div class="linha-contato"></div>
+      </div>
+    </div>
+  
+    <div class="icone-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <div class="info-contato"> 
+        <span class="info">Cajazeiras - PB</span>
+        <div class="linha-contato"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="envio-de-mensagem">
+    <div class="subtitulo-linha">
+      <h2 class="subtitulos">Como posso ajudar?</h2>
+      <div class="linha"></div>
+    </div>
+
+    <form class="formulario">
+      <div class="form-esquerda">
+        <input type="text" name="nome" placeholder="Escreva seu nome" required>
+        <input type="text" name="assunto" placeholder="Escreva o assunto" required>
+        <input type="email" name="email" placeholder="Escreva seu e-mail" required>
+      </div>
+    
+      <div class="form-direita">
+        <textarea name="mensagem" placeholder="Digite sua mensagem:"></textarea>
+        <button class="button-enviar-mensagem">Enviar</button>
+      </div>
+    </form>
+  </section>            
+                
+    <footer>
+      <div class="linha-final"></div>
+      <div class="info-final">
+        <div class="info-redes-sociais">
+          <a href="https://www.instagram.com/_andrepamplona/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/andr%C3%A9-pamplona-04674035a/" target="_blank">Linkedin</a>
+          <a href="https://wa.me/5583996083346" target="_blank">Whatsapp</a>
+        </div>
+      
+        <div class="info-direitos">
+          <p>©2025 Todos os direitos reservados a André Pamplona.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+    
+        if (toggle && menu) {
+          toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+          });
+        }
+      });
+    </script>
+    
+</body>
+</html>

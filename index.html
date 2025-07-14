@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>André Pamplona | Inicio</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+<body>
+    
+  <header>
+    <a href="index.html" class="logo">André Pamplona</a>
+  
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+  
+    <ul class="menu">
+      <li><a href="index.html" class="ativo">Inicio</a></li>
+      <li><a href="resumo.html">Resumo</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </header>
+
+
+    <section class="container">
+        <main class="inicio">
+          <div class="perfil-e-texto">
+            <div class="imagem-de-perfil">
+              <img src="img/eu.jpg" alt="Minha Foto">
+            </div>
+      
+            <div class="conteudo-de-inicio">
+              <p class="inicio-formacao">Designer Gráfico e Dev. em formação</p>
+              <h2 class="meu-nome">André Pamplona</h2>
+              <p class="inicio-breve-texto">
+                Entre pixels e linhas de código, tô sempre buscando dar vida a ideias. Bora trocar uma ideia?
+                Entre pixels e linhas de código, tô sempre buscando dar vida a ideias. 
+              </p>
+      
+              <div class="icones-sociais">
+                <a href="https://www.linkedin.com/in/andr%C3%A9-pamplona-04674035a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:andre.pamplona.filho@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/andrepamplona-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.behance.net/andrpamplona" target="_blank"><i class="fab fa-behance"></i></a>
+              </div>
+      
+              <div class="botoes-do-inicio">
+                <a href="arq/Currículo - André Pamplona.pdf" class="botao-inicio">Currículo</a>
+                <a href="contato.html" class="botao-inicio">Contato</a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>      
+      
+
+    <footer>
+        <div class="linha-final"></div>
+        <div class="info-final">
+          <div class="info-redes-sociais">
+            <a href="https://www.instagram.com/_andrepamplona/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9-pamplona-04674035a/" target="_blank">Linkedin</a>
+            <a href="https://wa.me/5583996083346" target="_blank">Whatsapp</a>
+          </div>
+        
+          <div class="info-direitos">
+            <p>©2025 Todos os direitos reservados a André Pamplona.</p>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+    
+        if (toggle && menu) {
+          toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+          });
+        }
+      });
+    </script>
+
+</body>
+</html>
