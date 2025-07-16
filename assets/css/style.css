@@ -805,7 +805,7 @@ main {
     justify-content: center;
     padding: 10px 20px;
     background-color: transparent;
-    color: var(--cor-destaque);
+    color: var(--cor-menos-importante);
     text-decoration: none;
     font-family: var(--fonte-principal);
     font-size: var(--fonte-para-paragrafo);
@@ -832,6 +832,22 @@ main {
 
 .Projeto:hover .saiba-mais span {
     color: var(--cor-escura);
+}   
+
+/* Faz com que o link ocupe o espaço todo do card e remova aparência padrão */
+.Projeto-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Mantém o efeito de hover */
+.Projeto-link:hover .Projeto {
+    border-color: var(--cor-destaque);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px var(--cor-fundo-tags);
 }
 
 /* ==================== SEÇÃO: CONTATO ==================== */
