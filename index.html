@@ -5,24 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>André Pamplona | Inicio</title>
         
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="assets/js/script.js" defer></script>
+
     </head>
 <body>
     
   <header>
     <a href="index.html" class="logo">André Pamplona</a>
-  
     <button class="menu-toggle" aria-label="Abrir menu">☰</button>
   
+    <div class="theme-toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <div class="switch-track">
+          <div class="switch-thumb">
+            <i class="fa-solid fa-sun sun-icon"></i>
+            <i class="fa-solid fa-moon moon-icon"></i>
+          </div>
+        </div>
+      </label>
+    </div>
+
     <ul class="menu">
       <li><a href="index.html" class="ativo">Inicio</a></li>
-      <li><a href="/assets/pages/resumo.html">Resumo</a></li>
-      <li><a href="/assets/pages/projetos/projetos.html">Projetos</a></li>
-      <li><a href="/assets/pages/contato.html">Contato</a></li>
+      <li><a href="assets/pages/resumo.html">Resumo</a></li>
+      <li><a href="assets/pages/projetos/projetos.html">Projetos</a></li>
+      <li><a href="assets/pages/contato.html">Contato</a></li>
     </ul>
   </header>
 
@@ -31,15 +44,14 @@
         <main class="inicio">
           <div class="perfil-e-texto">
             <div class="imagem-de-perfil">
-              <img src="/assets/img/eu.jpg" alt="Minha Foto">
+              <img src="assets/img/eu.jpg" alt="Minha Foto">
             </div>
       
             <div class="conteudo-de-inicio">
               <p class="inicio-formacao">Designer Gráfico e Dev. em formação</p>
               <h2 class="meu-nome">André Pamplona</h2>
               <p class="inicio-breve-texto">
-                Entre pixels e linhas de código, tô sempre buscando dar vida a ideias. Bora trocar uma ideia?
-                Entre pixels e linhas de código, tô sempre buscando dar vida a ideias. 
+                Olá, seja bem vindo ao meu website pessoal. Sinta se a vontade para navegar da maneira que desejar e entrar em contato caso fique interessado pelos meus serviço.
               </p>
       
               <div class="icones-sociais">
@@ -50,8 +62,8 @@
               </div>
       
               <div class="botoes-do-inicio">
-                <a href="/assets/docs/Currículo - André Pamplona.pdf" class="botao-inicio">Currículo</a>
-                <a href="/assets/pages/contato.html" class="botao-inicio">Contato</a>
+                <a href="assets/docs/Currículo - André Pamplona.pdf" class="botao-inicio">Currículo</a>
+                <a href="assets/pages/contato.html" class="botao-inicio">Contato</a>
               </div>
             </div>
           </div>

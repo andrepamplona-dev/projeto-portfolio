@@ -4,22 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>André Pamplona | Contato</title>
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="../js/script.js" defer></script>
     </head>
 
 <body>
 
   <header>
-        <a href="index.html" class="logo">André Pamplona</a>
+        <a href="../../index.html" class="logo">André Pamplona</a>
 
         <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        
+        <div class="theme-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch">
+            <div class="switch-track">
+            <div class="switch-thumb">
+              <i class="fa-solid fa-sun sun-icon"></i>
+              <i class="fa-solid fa-moon moon-icon"></i>
+            </div>
+          </div>
+        </label>
+        </div>
 
         <ul class="menu">
-            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="../../index.html">Inicio</a></li>
             <li><a href="resumo.html">Resumo</a></li>
             <li><a href="projetos/projetos.html">Projetos</a></li>
             <li><a href="contato.html" class="ativo">Contato</a></li>
