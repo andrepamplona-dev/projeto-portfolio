@@ -10,6 +10,58 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <script src="../../js/script.js" defer></script>
+
+        <style>
+        /* ==================== SEÇÃO FERRAMENTAS - FILTROS ==================== */
+        .secao-ferramentas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap-pequeno);
+            padding: var(--espacamento-base);        
+          }
+
+        .tag {
+          border-color: var(--cor-menos-importante);
+            position: relative;
+            padding: var(--espacamento-base);
+            background-color: transparent;
+            color: var(--cor-importante);
+            border-radius: var(--radius-medio);
+            font-size: var(--fonte-para-secundaria);
+            font-weight: var(--peso-medium);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            overflow: hidden;
+        }
+
+        .tag:hover {
+          background: var(--cor-destaque);
+            color: var(--cor-escura);
+            border-color: var(--cor-destaque);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.2);
+        }
+
+        .tag:active {
+            transform: translateY(0);
+        }
+
+        .filtro-ativo {
+            font-weight: var(--peso-regular);
+            background-color: var(--cor-destaque);
+            color: var(--cor-escura);
+            border-color: var(--cor-destaque);
+            box-shadow: 0 4px 15px var(--cor-destaque 0.3);
+        }
+
+        .filtro-ativo:hover{
+            color: var(--cor-escura);
+            transform: translateY(-2px);
+        }
+
+        </style>
       </head>
 <body>
 
@@ -43,143 +95,21 @@
   <span>Alguma frase aqui, moral</span>
 </section>
 
-<section class="filtragem-projetos">
-  <button class="filtro-projeto" data-filter="todos">
-    <i class="fas fa-th"></i>
-  </button>
+<section class="filtragem-projetos fade-element">
+            <div class="barra-pesquisa">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Busque por projetos..." aria-label="Campo de busca">
+            </div>
 
-  <div class="barra-pesquisa">
-    <i class="fas fa-search"></i>
-    <input type="text" placeholder="Busque por projetos..." aria-label="Campo de busca">
-  </div>
-</section>
+            <div class="secao-ferramentas">
+                <button class="tag filtro-ativo" id-filtro="todos">Todos</button>
+                <button class="tag" id-filtro="design">Design</button>
+                <button class="tag" id-filtro="desenvolvimento">Desenvolvimento</button>
+                <button class="tag" id-filtro="social">Projetos Sociais</button>
+            </div>
+        </section>
 
 <section class="portfolio-de-projetos">
-
-<a href="cards/projeto-teste/projeto-teste.html" class="Projeto-link">
-  <div class="Projeto">
-    <div class="info-projetos">
-      <div class="projeto-imagem">
-        <img src="cards/projeto-teste/img/eu.jpg" alt="Imagem do projeto" loading="lazy">
-        <div class="overlay-hover">
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-
-      <div class="projeto-conteudo">
-        <h3>Titulo do Projeto</h3>
-
-        <div class="tags-projeto">
-          <span class="tags-geral">HTML</span>
-          <span class="tags-geral">CSS</span>
-          <span class="tags-geral">JavaScript</span>
-        </div>
-
-        <span class="saiba-mais">Saiba mais</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-<a href="cards/projeto-teste/projeto-teste.html" class="Projeto-link">
-  <div class="Projeto">
-    <div class="info-projetos">
-      <div class="projeto-imagem">
-        <img src="cards/projeto-teste/img/eu.jpg" alt="Imagem do projeto" loading="lazy">
-        <div class="overlay-hover">
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-
-      <div class="projeto-conteudo">
-        <h3>Titulo do Projeto</h3>
-
-        <div class="tags-projeto">
-          <span class="tags-geral">HTML</span>
-          <span class="tags-geral">CSS</span>
-          <span class="tags-geral">JavaScript</span>
-        </div>
-
-        <span class="saiba-mais">Saiba mais</span>
-      </div>
-    </div>
-  </div>
-</a>
-
- <a href="cards/projeto-teste/projeto-teste.html" class="Projeto-link">
-  <div class="Projeto">
-    <div class="info-projetos">
-      <div class="projeto-imagem">
-        <img src="cards/projeto-teste/img/eu.jpg" alt="Imagem do projeto" loading="lazy">
-        <div class="overlay-hover">
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-
-      <div class="projeto-conteudo">
-        <h3>Titulo do Projeto</h3>
-
-        <div class="tags-projeto">
-          <span class="tags-geral">HTML</span>
-          <span class="tags-geral">CSS</span>
-          <span class="tags-geral">JavaScript</span>
-        </div>
-
-        <span class="saiba-mais">Saiba mais</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-<a href="cards/projeto-teste/projeto-teste.html" class="Projeto-link">
-  <div class="Projeto">
-    <div class="info-projetos">
-      <div class="projeto-imagem">
-        <img src="cards/projeto-teste/img/eu.jpg" alt="Imagem do projeto" loading="lazy">
-        <div class="overlay-hover">
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-
-      <div class="projeto-conteudo">
-        <h3>Titulo do Projeto</h3>
-
-        <div class="tags-projeto">
-          <span class="tags-geral">HTML</span>
-          <span class="tags-geral">CSS</span>
-          <span class="tags-geral">JavaScript</span>
-        </div>
-
-        <span class="saiba-mais">Saiba mais</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-<a href="cards/projeto-teste/projeto-teste.html" class="Projeto-link">
-  <div class="Projeto">
-    <div class="info-projetos">
-      <div class="projeto-imagem">
-        <img src="cards/projeto-teste/img/eu.jpg" alt="Imagem do projeto" loading="lazy">
-        <div class="overlay-hover">
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-
-      <div class="projeto-conteudo">
-        <h3>Titulo do Projeto</h3>
-
-        <div class="tags-projeto">
-          <span class="tags-geral">HTML</span>
-          <span class="tags-geral">CSS</span>
-          <span class="tags-geral">JavaScript</span>
-        </div>
-
-        <span class="saiba-mais">Saiba mais</span>
-      </div>
-    </div>
-  </div>
-</a>
 
 </section>
 
@@ -197,6 +127,8 @@
       </div>
     </div>
 </footer>
+
+<script src="../../js/portfolio.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {

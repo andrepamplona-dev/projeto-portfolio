@@ -48,3 +48,61 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Sistema de filtros - configurar botões
+        function filtrarItens() {
+            const botoes = document.querySelectorAll('.tag');
+            const itens = document.querySelectorAll('.item');
+            
+            // Adicionar click em cada botão
+            botoes.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    // Remove classe ativa de todos os botões
+                    botoes.forEach(btn => btn.classList.remove('filtro-ativo'));
+                    
+                    // Adiciona classe 'ativa' no botão clicado
+                    this.classList.add('filtro-ativo');
+                    
+                    // Pega categoria e aplica filtro
+                    const categoria = this.getAttribute('id-filtro');
+                    aplicarFiltro(categoria);
+                });
+            });
+        }
+
+        // Aplicar filtro nos itens
+        function aplicarFiltro(categoria) {
+            const itens = document.querySelectorAll('.item');
+            
+            itens.forEach(item => {
+                const categoriaItem = item.getAttribute('id-categoria');
+                
+                if (categoria === categoriaItem) {
+                    // Mostrar item
+                    item.classList.remove('oculto');
+                    item.classList.add('visivel');
+                } else {
+                    // Esconder item
+                    item.classList.remove('visivel');
+                    item.classList.add('oculto');
+                }
+            });
+        }
+
+        // Inicializar filtros ao carregar página
+        document.addEventListener('DOMContentLoaded', function() {
+            filtrarItens(); // Configurar eventos dos botões
+            
+            // Aplicar filtro inicial para linguagens (que já está ativo)
+            aplicarFiltro('linguagem');
+            
+            // Garantir que o botão linguagem está ativo
+            const botaoLinguagem = document.querySelector('[id-filtro="linguagem"]');
+            if (botaoLinguagem) {
+                document.querySelectorAll('.tag').forEach(btn => btn.classList.remove('filtro-ativo'));
+                botaoLinguagem.classList.add('filtro-ativo');
+            }
+        });
+
+        

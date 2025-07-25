@@ -600,7 +600,7 @@ main {
     padding: var(--espacamento-base);
     background-color: transparent;
     border-radius: var(--radius-medio);
-    margin-bottom: var(--espacamento-base);
+    margin-bottom: var(--espacamento-grande);
     color: var(--cor-importante);
 }
 
