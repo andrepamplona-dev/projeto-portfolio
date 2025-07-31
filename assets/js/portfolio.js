@@ -5,66 +5,66 @@
 // Lista de todos os projetos
 const projetos = [
     {
-        id: "plot-twist-club",
-        titulo: "Plot Twist Club",
-        imagem: "../../img/eu.jpg",
-        alt: "Plot Twist Club",
+        id: "projeto-1",
+        titulo: "Projeto 1",
+        imagem: "../../img/Projeto 1.jpg",
+        alt: "Projeto 1",
         tags: ["Adobe Illustrator", "Midias Sociais", "Projeto Social", "Artistico Cultural"],
-        link: "portfolio/plot-twist.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
-        id: "nurva",
-        titulo: "Nurva",
-        imagem: "../../img/eu.jpg",
-        alt: "Nurva",
+        id: "projeto-2",
+        titulo: "Projeto 2",
+        imagem: "../../img/Projeto 2.jpg",
+        alt: "Projeto 2",
         tags: ["HTML", "CSS", "JavaScript"],
         link: "portfolio/nurva.html"
     },
     {
-        id: "id-visual-bugs-bunny",
-        titulo: "Id. Visual - Bugs Bunny",
-        imagem: "../../img/eu.jpg",
-        alt: "Id. Visual - Bugs Bunny",
+        id: "projeto-3",
+        titulo: "Projeto 3",
+        imagem: "../../img/Projeto 3.jpg",
+        alt: "Projeto 3",
         tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
         link: "portfolio/id-visual-bugs-bunny.html"
     },
     {
-        id: "id-visual-neontech",
-        titulo: "Id. Visual - NeonTech Gaming",
-        imagem: "../../img/eu.jpg",
-        alt: "Id. Visual - NeonTech Gaming",
+        id: "Projeto 4",
+        titulo: "Projeto 4",
+        imagem: "../../img/Projeto 4.jpg",
+        alt: "Projeto 4",
         tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
         link: "portfolio/id-visual-neontech.html"
     },
     {
-        id: "pod-adm",
-        titulo: "POD ADM",
-        imagem: "../../img/eu.jpg",
-        alt: "Pod ADM",
+        id: "projeto-5",
+        titulo: "Projeto 5",
+        imagem: "../../img/Projeto 5.jpg",
+        alt: "Projeto 5",
         tags: ["Projeto Social", "Empreendedorismo", "Marketing", "Midias Sociais"],
         link: "portfolio/pod-adm.html"
     },
     {
-        id: "smart-energy",
-        titulo: "SMART ENERGY",
-        imagem: "../../img/eu.jpg",
-        alt: "Smart Energy",
+        id: "projeto-6",
+        titulo: "Projeto 6",
+        imagem: "../../img/Projeto 6.jpg",
+        alt: "Projeto 6",
         tags: ["Hardware", "Software", "Analise de Dados"],
         link: "portfolio/"
     },
     {
-        id: "semana-literaria",
-        titulo: "Semana Literaria",
-        imagem: "../../img/eu.jpg",
-        alt: "Semana Literaria",
+        id: "projeto-7",
+        titulo: "Projeto 7",
+        imagem: "../../img/Projeto 7.jpg",
+        alt: "Projeto 7",
         tags: ["Adobe Photoshop", "Canva", "Literatura", "Artistico Cultural"],
         link: "portfolio/semana-literaria.html"
     },
     {
-        id: "feira-de-linguas",
-        titulo: "Feira de Línguas",
-        imagem: "../../img/eu.jpg",
-        alt: "Feira de Línguas",
+        id: "projeto-8",
+        titulo: "Projeto 8",
+        imagem: "../../img/Projeto 8.jpg",
+        alt: "Projeto 8",
         tags: ["Mídias Sociais", "Canva", "Adobe Photoshop", "Artistico Cultural"],
         link: "portfolio/feira-de-linguas.html"
     }

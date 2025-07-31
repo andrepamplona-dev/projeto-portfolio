@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>André Pamplona | Resumo</title>
+        <title>[Nome do profissional] | Resumo</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+        <script src="../js/script.js" defer></script>
         <style>
 
           /* ==================== SEÇÃO: FERRAMENTAS E LINGUAGENS ==================== */
@@ -77,7 +77,7 @@
 <body>
     
     <header>
-        <a href="../../index.html" class="logo">André Pamplona</a>
+        <a href="../../index.html" class="logo">[Logo do Profissional]</a>
 
         <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
@@ -103,7 +103,7 @@
 
     <section class="intro-page"> 
         <h1>Resumo</h1>
-        <span>5 anos de experiência</span>
+        <span>[Anos de experiência do profissional]</span>
     </section>
 
     <section class="especialidades">
@@ -115,20 +115,20 @@
         <div class="especialidades-grupo">
             <div class="info-especialidades">
                 <i class="fas fa-palette"></i>
-                <h3>Identidade Visual</h3>
-                <p>A identidade visual é a expressão gráfica que traduz a essência de uma marca...</p>
+                <h3>[Especilidade 1]</h3>
+                <p>Breve descrição sobre a especilidade 1 do profissional.</p>
             </div>
     
             <div class="info-especialidades">
                 <i class="fas fa-desktop"></i>
-                <h3>UI/UX Design</h3>
-                <p>Criação de interfaces intuitivas, responsivas e centradas no usuário...</p>
+                <h3>[Especialidade 2]</h3>
+                <p>Breve descrição sobre a especilidade 2 do profissional.</p>
             </div>
     
             <div class="info-especialidades">
                 <i class="fas fa-code"></i>
-                <h3>Desenvolvimento Front-End</h3>
-                <p>Utilização de HTML, CSS e JavaScript para construção de sites modernos...</p>
+                <h3>[Especialidade 3]</h3>
+                <p>Breve descrição sobre a especilidade 3 do profissional.</p>
             </div>
         </div>
     </section>
@@ -144,25 +144,25 @@
             <div class="info-edu-experiencia">
               <div class="info-data">
                 <div class="datas">
-                  <div class="data">2023</div>
-                  <div class="data">2025</div>
+                  <div class="data">XXXX</div>
+                  <div class="data">XXXX</div>
                 </div>
-                <small>IFPB - Campus Cajazeiras</small>
+                <small>[Instituição onde foi feito o superior]</small>
               </div>
               <h3>Ensino Superior</h3>
-              <p>Atualmente cursando Análise e Desenvolvimento de Sistemas.</p>
+              <p>Breve descrição sobre o curso de ensino superior.</p>
             </div>
       
             <div class="info-edu-experiencia">
               <div class="info-data">
                 <div class="datas">
-                  <div class="data">2021</div>
-                  <div class="data">2023</div>
+                  <div class="data">XXXX</div>
+                  <div class="data">XXXX</div>
                 </div>
-                <small>Colégio ABC</small>
+                <small>[Nome do colégio onde foi feito o ensino médio]</small>
               </div>
               <h3>Ensino Médio</h3>
-              <p>Conclusão do curso técnico integrado em informática.</p>
+              <p>Breve descrição sobre o ensino médio</p>
             </div>
           </div>
         </div>
@@ -177,25 +177,25 @@
             <div class="info-edu-experiencia">
               <div class="info-data">
                 <div class="datas">
-                  <div class="data">2024</div>
-                  <div class="data">2025</div>
+                  <div class="data">XXXX</div>
+                  <div class="data">XXXX</div>
                 </div>
-                <small>Empresa XYZ</small>
+                <small>[Empresa onde foi feito o estágio]</small>
               </div>
-              <h3>Estágio Front-end</h3>
-              <p>Atuando com desenvolvimento web utilizando HTML, CSS e JavaScript.</p>
+              <h3>Estágio</h3>
+              <p>Breve descrição sobre o estágio.</p>
             </div>
       
             <div class="info-edu-experiencia">
               <div class="info-data">
                 <div class="datas">
-                  <div class="data">2023</div>
-                  <div class="data">2024</div>
+                  <div class="data">XXXX</div>
+                  <div class="data">XXXX</div>
                 </div>
-                <small>Projetos Freelance</small>
+                <small>[Empresa onde atuou como dev. júnior]</small>
               </div>
-              <h3>Desenvolvedor Web</h3>
-              <p>Criação de sites responsivos para pequenos negócios locais.</p>
+              <h3>Dev. Júnior</h3>
+              <p>Breve descrição sobre a função na empresa.</p>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@
             </section>
 
     <div class="baixar-cv">
-        <a href="docs/Currículo - André Pamplona.pdf" download><button>Baixar Currículo Completo</button></a>
+        <a href="../docs/Currículo do profissional.pdf" download><button>Baixar Currículo Completo</button></a>
     </div>
 
     <footer>
@@ -356,21 +356,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="../js/script.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.menu');
-    
-        if (toggle && menu) {
-          toggle.addEventListener('click', () => {
-            menu.classList.toggle('show');
-          });
-        }
-      });
-    </script>
-    
 </body>
 </html>
