@@ -18,7 +18,7 @@ const projetos = [
         imagem: "../../img/Projeto 2.jpg",
         alt: "Projeto 2",
         tags: ["HTML", "CSS", "JavaScript"],
-        link: "portfolio/nurva.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "projeto-3",
@@ -26,7 +26,7 @@ const projetos = [
         imagem: "../../img/Projeto 3.jpg",
         alt: "Projeto 3",
         tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
-        link: "portfolio/id-visual-bugs-bunny.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "Projeto 4",
@@ -34,7 +34,7 @@ const projetos = [
         imagem: "../../img/Projeto 4.jpg",
         alt: "Projeto 4",
         tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
-        link: "portfolio/id-visual-neontech.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "projeto-5",
@@ -42,7 +42,7 @@ const projetos = [
         imagem: "../../img/Projeto 5.jpg",
         alt: "Projeto 5",
         tags: ["Projeto Social", "Empreendedorismo", "Marketing", "Midias Sociais"],
-        link: "portfolio/pod-adm.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "projeto-6",
@@ -50,7 +50,7 @@ const projetos = [
         imagem: "../../img/Projeto 6.jpg",
         alt: "Projeto 6",
         tags: ["Hardware", "Software", "Analise de Dados"],
-        link: "portfolio/"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "projeto-7",
@@ -58,7 +58,7 @@ const projetos = [
         imagem: "../../img/Projeto 7.jpg",
         alt: "Projeto 7",
         tags: ["Adobe Photoshop", "Canva", "Literatura", "Artistico Cultural"],
-        link: "portfolio/semana-literaria.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     },
     {
         id: "projeto-8",
@@ -66,7 +66,7 @@ const projetos = [
         imagem: "../../img/Projeto 8.jpg",
         alt: "Projeto 8",
         tags: ["Mídias Sociais", "Canva", "Adobe Photoshop", "Artistico Cultural"],
-        link: "portfolio/feira-de-linguas.html"
+        link: "cards/projeto-teste/projeto-teste.html"
     }
 ];
 

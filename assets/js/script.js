@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
           font-size: var(--fonte-para-h2);
           margin-bottom: 20px;
           text-align: center;
-        ">✓ Mensagem Enviada!</h2>
+        ">Mensagem Enviada</h2>
         
         <div style="
           background-color: rgba(0, 232, 255, 0.1);
@@ -324,23 +324,23 @@ document.addEventListener('DOMContentLoaded', () => {
           margin-bottom: 20px;
         ">
           <h3 style="color: var(--cor-importante); margin-bottom: 15px; font-family: var(--fonte-principal);">
-            📋 Dados da Mensagem:
+          Dados da Mensagem:
           </h3>
           
           <p style="color: var(--cor-menos-importante); margin: 8px 0; font-family: var(--fonte-secundaria);">
-            <strong style="color: var(--cor-importante);">👤 Nome:</strong> ${dadosFormulario.nome}
+            <strong style="color: var(--cor-importante);">Nome:</strong> ${dadosFormulario.nome}
           </p>
           
           <p style="color: var(--cor-menos-importante); margin: 8px 0; font-family: var(--fonte-secundaria);">
-            <strong style="color: var(--cor-importante);">📧 E-mail:</strong> ${dadosFormulario.email}
+            <strong style="color: var(--cor-importante);">E-mail:</strong> ${dadosFormulario.email}
           </p>
           
           <p style="color: var(--cor-menos-importante); margin: 8px 0; font-family: var(--fonte-secundaria);">
-            <strong style="color: var(--cor-importante);">📝 Assunto:</strong> ${dadosFormulario.assunto}
+            <strong style="color: var(--cor-importante);">Assunto:</strong> ${dadosFormulario.assunto}
           </p>
           
           <p style="color: var(--cor-menos-importante); margin: 8px 0; font-family: var(--fonte-secundaria);">
-            <strong style="color: var(--cor-importante);">💬 Mensagem:</strong>
+            <strong style="color: var(--cor-importante);">Mensagem:</strong>
           </p>
           <div style="
             background-color: var(--cor-escura);
@@ -363,10 +363,10 @@ document.addEventListener('DOMContentLoaded', () => {
           text-align: center;
         ">
           <p style="color: var(--cor-menos-importante); font-family: var(--fonte-secundaria); margin: 5px 0;">
-            📊 <strong style="color: var(--cor-importante);">Total de mensagens enviadas:</strong> ${totalMensagens}
+          <strong style="color: var(--cor-importante);">Total de mensagens enviadas:</strong> ${totalMensagens}
           </p>
           <p style="color: var(--cor-menos-importante); font-family: var(--fonte-secundaria); margin: 5px 0; font-size: 0.9em;">
-            🕒 Enviado em: ${new Date().toLocaleString('pt-BR')}
+          Enviado em: ${new Date().toLocaleString('pt-BR')}
           </p>
         </div>
         
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
             font-family: var(--fonte-secundaria);
             font-weight: var(--peso-medium);
             transition: all 0.3s ease;
-          ">📜 Ver Histórico</button>
+          ">Ver Histórico</button>
           
           <button id="nova-mensagem" style="
             background-color: var(--cor-destaque);
@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
             font-family: var(--fonte-secundaria);
             font-weight: var(--peso-medium);
             transition: all 0.3s ease;
-          ">✉️ Nova Mensagem</button>
+          ">Nova Mensagem</button>
         </div>
       `;
 
@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const historico = obterHistoricoMensagens();
       
       if (historico.length === 0) {
-        alert('📭 Nenhuma mensagem no histórico ainda.');
+        alert('Nenhuma mensagem no histórico ainda.');
         return;
       }
 
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
           font-family: var(--fonte-principal);
           text-align: center;
           margin-bottom: 25px;
-        ">📜 Histórico de Mensagens (${historico.length})</h2>
+        ">Histórico de Mensagens (${historico.length})</h2>
       `;
 
       historico.forEach((msg, index) => {
@@ -532,11 +532,11 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             
             <p style="color: var(--cor-menos-importante); margin: 5px 0; font-family: var(--fonte-secundaria);">
-              <strong>👤 De:</strong> ${msg.nome} (${msg.email})
+              <strong>De:</strong> ${msg.nome} (${msg.email})
             </p>
             
             <p style="color: var(--cor-menos-importante); margin: 5px 0; font-family: var(--fonte-secundaria);">
-              <strong>💬 Mensagem:</strong>
+              <strong>Mensagem:</strong>
             </p>
             <div style="
               background-color: var(--cor-escura);
@@ -565,7 +565,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor: pointer;
             font-family: var(--fonte-secundaria);
             margin-right: 10px;
-          ">🗑️ Limpar Histórico</button>
+          ">Limpar Histórico</button>
           
           <button onclick="this.parentElement.parentElement.parentElement.remove()" style="
             background-color: var(--cor-destaque);
@@ -585,9 +585,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Função global para limpar histórico
       window.limparHistoricoConfirm = function() {
-        if (confirm('🗑️ Tem certeza que deseja limpar todo o histórico de mensagens?')) {
+        if (confirm('Tem certeza que deseja limpar todo o histórico de mensagens?')) {
           localStorage.removeItem('historicoMensagens');
-          alert('✅ Histórico limpo com sucesso!');
+          alert('Histórico limpo com sucesso!');
           document.getElementById('modal-historico').remove();
         }
       };
