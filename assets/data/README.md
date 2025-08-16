@@ -71,4 +71,3 @@ fetch('http://localhost:3000/projetos?tags_like=JavaScript')
 ---
 
 **💡 Mantenha o servidor rodando durante o desenvolvimento!**
-
