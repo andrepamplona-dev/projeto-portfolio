@@ -2,73 +2,38 @@
 // DADOS DO PORTFÓLIO
 // ========================================
 
-// Lista de todos os projetos
-const projetos = [
-    {
-        id: "projeto-1",
-        titulo: "Projeto 1",
-        imagem: "../../img/Projeto 1.jpg",
-        alt: "Projeto 1",
-        tags: ["Adobe Illustrator", "Midias Sociais", "Projeto Social", "Artistico Cultural"],
-        link: "cards/projeto-teste/projeto-teste.html"
-    },
-    {
-        id: "projeto-2",
-        titulo: "Projeto 2",
-        imagem: "../../img/Projeto 2.jpg",
-        alt: "Projeto 2",
-        tags: ["HTML", "CSS", "JavaScript"],
-        link: "portfolio/nurva.html"
-    },
-    {
-        id: "projeto-3",
-        titulo: "Projeto 3",
-        imagem: "../../img/Projeto 3.jpg",
-        alt: "Projeto 3",
-        tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
-        link: "portfolio/id-visual-bugs-bunny.html"
-    },
-    {
-        id: "Projeto 4",
-        titulo: "Projeto 4",
-        imagem: "../../img/Projeto 4.jpg",
-        alt: "Projeto 4",
-        tags: ["Adobe Photoshop", "Adobe Illustrator", "Id. Visual"],
-        link: "portfolio/id-visual-neontech.html"
-    },
-    {
-        id: "projeto-5",
-        titulo: "Projeto 5",
-        imagem: "../../img/Projeto 5.jpg",
-        alt: "Projeto 5",
-        tags: ["Projeto Social", "Empreendedorismo", "Marketing", "Midias Sociais"],
-        link: "portfolio/pod-adm.html"
-    },
-    {
-        id: "projeto-6",
-        titulo: "Projeto 6",
-        imagem: "../../img/Projeto 6.jpg",
-        alt: "Projeto 6",
-        tags: ["Hardware", "Software", "Analise de Dados"],
-        link: "portfolio/"
-    },
-    {
-        id: "projeto-7",
-        titulo: "Projeto 7",
-        imagem: "../../img/Projeto 7.jpg",
-        alt: "Projeto 7",
-        tags: ["Adobe Photoshop", "Canva", "Literatura", "Artistico Cultural"],
-        link: "portfolio/semana-literaria.html"
-    },
-    {
-        id: "projeto-8",
-        titulo: "Projeto 8",
-        imagem: "../../img/Projeto 8.jpg",
-        alt: "Projeto 8",
-        tags: ["Mídias Sociais", "Canva", "Adobe Photoshop", "Artistico Cultural"],
-        link: "portfolio/feira-de-linguas.html"
+let projetos = []; 
+
+// Função para carregar projetos da API
+async function carregarProjetos() {
+    try {
+        // Mostrar estado de carregamento
+        containerProjetos.innerHTML = `
+            <div class="carregando">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Carregando projetos...</p>
+            </div>
+        `;
+        
+        const response = await fetch('http://localhost:3000/projetos');
+        if (!response.ok) throw new Error('Erro na resposta da API');
+        
+        projetos = await response.json();
+        projetosFiltrados = [...projetos];
+        aplicarFiltros();
+        
+    } catch (error) {
+        console.error('Erro ao carregar projetos:', error);
+        containerProjetos.innerHTML = `
+            <div class="erro-carregamento">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Erro ao carregar projetos</h3>
+                <p>Verifique se o servidor está rodando (http://localhost:3000)</p>
+                <button onclick="carregarProjetos()">Tentar novamente</button>
+            </div>
+        `;
     }
-];
+}
 
 // Categorias dos filtros
 const categorias = {
@@ -81,7 +46,7 @@ const categorias = {
 // VARIÁVEIS GLOBAIS
 // ========================================
 
-let projetosFiltrados = [...projetos]; 
+let projetosFiltrados = [];
 let filtroAtual = 'todos';
 
 // Elementos da página
@@ -266,7 +231,4 @@ botoesFiltro.forEach(botao => {
 // ========================================
 
 // Quando a página carregar
-document.addEventListener('DOMContentLoaded', function() {
-    // Mostrar todos os projetos
-    mostrarProjetos(projetos);
-});
+document.addEventListener('DOMContentLoaded', carregarProjetos);
